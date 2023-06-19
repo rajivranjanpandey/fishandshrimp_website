@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.71aa68f5.css",
+    "main.js": "/static/js/main.fd5de2ff.js",
+    "static/js/787.b48af0a1.chunk.js": "/static/js/787.b48af0a1.chunk.js",
+    "static/media/mian_banner.png": "/static/media/mian_banner.3973021611d94747dcf4.png",
+    "static/media/locations.png": "/static/media/locations.a788d5104920d628f920.png",
+    "static/media/business-locations.png": "/static/media/business-locations.8f22fa1022dfe3e7d8cb.png",
+    "static/media/Vision.png": "/static/media/Vision.4d839f92dd24ccc8d7a1.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.71aa68f5.css.map": "/static/css/main.71aa68f5.css.map",
+    "main.fd5de2ff.js.map": "/static/js/main.fd5de2ff.js.map",
+    "787.b48af0a1.chunk.js.map": "/static/js/787.b48af0a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71aa68f5.css",
+    "static/js/main.fd5de2ff.js"
+  ]
+}
