@@ -1,0 +1,133 @@
+.banner_section {
+  height: calc(100vh - 70px) !important;
+  background-color: var(--color-primary);
+  color: #fff;
+  display: flex;
+}
+
+.banner_text h1 {
+  font-size: 65px;
+  line-height: 100%;
+  margin-bottom: 30px;
+}
+
+.banner_text p {
+  font-size: 27px;
+  line-height: 40px;
+}
+
+.our_products {
+  /* background-color: #ccc4ff; */
+  padding: 55px 0;
+}
+
+.business_locations {
+  padding: 55px 0;
+  height: calc(80vh - 70px) !important;
+  display: flex;
+}
+
+.gradient_bg {
+  background-image: linear-gradient(white, #eaffff);
+}
+
+.hedar_text {
+  text-align: center;
+}
+
+.our_product_info ul li img {
+  border-radius: 5px;
+}
+
+.others_hedar_text h2 {
+  font-size: 50px !important;
+  margin-bottom: 30px;
+}
+
+.others_hedar_text p {
+  font-size: 27px;
+  line-height: 40px;
+}
+
+.hedar_text h2 {
+  font-size: 65px !important;
+}
+
+.sub_hedar_text {
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.our_product_info {
+  margin-top: 50px;
+}
+
+.location_pic {
+  margin: -80px;
+}
+
+.read_more_body {
+  text-align: center;
+}
+
+
+@media (max-width: 899px) {
+  .banner_section {
+    height: calc(77vh - 70px) !important;
+  }
+
+  .sub_hedar_text {
+    font-size: 1rem !important;
+  }
+
+  .hedar_text h2 {
+    font-size: 30px !important;
+  }
+
+  .banner_text p {
+    line-height: 30px;
+  }
+
+  .our_product_info {
+    margin-top: 35px;
+  }
+
+  .our_product_info .MuiImageList-root {
+    display: block;
+  }
+
+  .our_product_info .MuiImageListItem-root {
+    margin-bottom: 20px;
+  }
+
+  .our_products {
+    padding-right: 16px;
+  }
+
+  .location_pic {
+    margin: 0px;
+  }
+
+  .business_locations {
+    padding: 35px 0;
+    height: inherit !important;
+  }
+
+  .business_locations .pl_75 {
+    padding: 0;
+  }
+
+  .others_hedar_text p {
+    line-height: 28px;
+  }
+
+  .others_hedar_text h2 {
+    font-size: 30px !important;
+  }
+
+  .read_more {
+    margin-top: 15px !important;
+  }
+}

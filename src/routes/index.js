@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../views/Home";
-import About from "../views/About";
+import Home from "../views/home/Home";
+import About from "../views/about/About";
 import OurVision from "../views/OurVision";
-import OurProducts from "../views/OurProducts";
-import BusinessLocations from "../views/BusinessLocations";
+import OurProducts from "../views/ourProducts/OurProducts";
+import BusinessLocations from "../views/businessLocations/BusinessLocations";
 import MaiinWrapper from "../views/MaiinWrapper";
 
 

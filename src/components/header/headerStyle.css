@@ -1,0 +1,112 @@
+.logo img {
+  width: 100px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 600;
+  color: wheat;
+}
+
+.desktop_menu_body {
+  background-color: var(--color-primary) !important;
+  height: 75px;
+}
+
+.menu_body a {
+  text-align: right;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 20px;
+  color: white;
+}
+
+.MuiPaper-root {
+  box-shadow: none !important;
+}
+
+.mobile_header {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.mobile_logo,
+.mobile_header {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* responsive media */
+@media (max-width: 899px) {
+  .mobile_logo {
+    font-size: 1.3rem;
+  }
+
+  .desktop_menu_body {
+    height: auto;
+  }
+
+  .desktop_menu_body .MuiToolbar-root {
+    height: 75px;
+  }
+
+  .mobile_header .mobile_logo,
+  .mobile_header,
+  .mobile_header .MuiButtonBase-root {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mobile_header .MuiButtonBase-root {
+    display: block !important;
+    margin: 0;
+  }
+
+  .mobile_header .MuiSvgIcon-root {
+    font-size: 2rem;
+  }
+
+  .mobile_menu {
+    padding: 15px;
+    height: 100%;
+  }
+
+  .mobile_menu .logo {
+    color: var(--color-primary);
+    font-size: 23px;
+  }
+
+  .mobile_menu ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+
+  .mobile_menu ul a {
+    padding: 8px 0;
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 900px) {
+
+  .mobile_logo,
+  .mobile_header {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .MuiToolbar-root {
+    min-width: 1200px;
+    margin: auto;
+  }
+
+  .MuiPaper-root {
+    display: none;
+  }
+}

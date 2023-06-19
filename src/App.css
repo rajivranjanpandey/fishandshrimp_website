@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  word-break: break-all;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* Varialbes */
+:root {
+  --color-primary: #4c35de;
+  --light-gray: #6a6a6a;
+  /* --black: #000000;
+  --dark: #1f4e3d;
+  --white: #ffffff;
+  --color-secondary: #f07e01;
+  --color-heading: #04000b;
+  --color-paragraph: #484747; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  word-break: break-all;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  padding: 9px 0px 0px 0px !important;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.pl_75 {
+  padding-left: 75px;
+}
+
+.read_more {
+  text-transform: capitalize !important;
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+  margin-top: 50px !important;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.align-items-center {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.d-flex {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 899px) {
+
+  h1,
+  h2 {
+    font-size: 30px !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  p {
+    font-size: 18px !important;
+  }
+
+  .MuiGrid-container {
+    padding: 0 20px;
+  }
+
+  .MuiGrid-item {
+    padding: 0px;
+    padding-left: 0px !important;
+    padding-top: 0px !important;
   }
 }
