@@ -1,0 +1,34 @@
+.our_vision_section {
+    margin-top: 20px;
+    display: flex;
+}
+
+.our_vision_text {
+    padding: 50px 0;
+}
+
+.our_vision_section .our_vision_text h1 {
+    font-size: 40px;
+    line-height: 100%;
+    margin-bottom: 15px;
+    color: var(--color-primary);
+}
+
+.our_vision_section .our_vision_text p {
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--light-gray);
+}
+
+
+@media (max-width: 899px) {
+
+    .our_vision_section .our_vision_text h2 {
+        font-size: 30px !important;
+    }
+
+    .our_vision_section .our_vision_text p {
+        line-height: 30px;
+    }
+
+}

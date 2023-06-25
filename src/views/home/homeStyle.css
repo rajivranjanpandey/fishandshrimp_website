@@ -33,6 +33,7 @@
 
 .hedar_text {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .our_product_info ul li img {
@@ -72,10 +73,30 @@
   text-align: center;
 }
 
+.view_all .product_card {
+  min-height: 442px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @media (max-width: 899px) {
+  .banner_text h1 {
+    font-size: 25px !important;
+  }
+
+  .view_all .product_card {
+    min-height: 110px;
+  }
+
   .banner_section {
-    height: calc(77vh - 70px) !important;
+    height: inherit !important;
+    padding: 55px 0;
+  }
+
+  .mobile_reverse .MuiGrid-container {
+    flex-direction: column-reverse;
+    gap: 35px;
   }
 
   .sub_hedar_text {
@@ -84,6 +105,7 @@
 
   .hedar_text h2 {
     font-size: 30px !important;
+    margin-bottom: 55px;
   }
 
   .banner_text p {
@@ -100,10 +122,6 @@
 
   .our_product_info .MuiImageListItem-root {
     margin-bottom: 20px;
-  }
-
-  .our_products {
-    padding-right: 16px;
   }
 
   .location_pic {
@@ -124,10 +142,14 @@
   }
 
   .others_hedar_text h2 {
-    font-size: 30px !important;
+    font-size: 24px !important;
   }
 
   .read_more {
     margin-top: 15px !important;
+  }
+
+  .gradient_bg .business_locations {
+    border-top: 1px solid #ccc;
   }
 }

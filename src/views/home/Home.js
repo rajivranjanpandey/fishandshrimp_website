@@ -56,7 +56,7 @@ export default function Home() {
                     </Grid>
                 </Grid>
             </div>
-            <div className='our_products'>
+            {/* <div className='our_products'>
                 <Grid container spacing={2} maxWidth="lg" margin="auto" alignItems="center">
                     <Grid item xs={12} sm={12} md={12}>
                         <div className='hedar_text'>
@@ -91,6 +91,91 @@ export default function Home() {
                         </div>
                     </Grid>
                 </Grid>
+            </div> */}
+            <div className='our_products'>
+                <Grid container spacing={2} maxWidth="lg" margin="auto" alignItems="center">
+                    <Grid item xs={12} sm={12} md={12}>
+                        <div className='hedar_text'>
+                            <p className='sub_hedar_text'>Best Products</p>
+                            <h2>Our Products</h2>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} sm={3} md={3}>
+                        <div className="product_card">
+                            <div className="image_container">
+                                <div className="cover_image product_image">
+                                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.alternate.nl%2Fp%2F600x600%2Fk%2FRazer_Kraken___Kitty_Edition___Quartz_gaming_headset%40%40kh-r59_31.jpg&f=1&nofb=1" alt="" />
+                                </div>
+                            </div>
+                            <div className="product_info">
+                                <div className='d-flex align-items-center gap-15'>
+                                    <a href="#" className="free_shipping">Free shipping</a>
+                                    <div className="stock">
+                                        <div className="stock_status"></div>
+                                        <p className="stock_info">in stock.</p>
+                                    </div>
+                                </div>
+                                <h3 className="product_name">Razer Kraken Kitty Edt Gamming Headset Quartz</h3>
+                                <p className="regular_price">1599$</p>
+                                <p className="discount_price">799$</p>
+
+                            </div>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} sm={3} md={3}>
+                        <div className="product_card">
+                            <div className="image_container">
+                                <div className="cover_image product_image">
+                                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.alternate.nl%2Fp%2F600x600%2Fk%2FRazer_Kraken___Kitty_Edition___Quartz_gaming_headset%40%40kh-r59_31.jpg&f=1&nofb=1" alt="" />
+                                </div>
+                            </div>
+                            <div className="product_info">
+                                <div className='d-flex align-items-center gap-15'>
+                                    <a href="#" className="free_shipping">Free shipping</a>
+                                    <div className="stock">
+                                        <div className="stock_status"></div>
+                                        <p className="stock_info">in stock.</p>
+                                    </div>
+                                </div>
+                                <h3 className="product_name">Razer Kraken Kitty Edt Gamming Headset Quartz</h3>
+                                <p className="regular_price">1599$</p>
+                                <p className="discount_price">799$</p>
+
+                            </div>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} sm={3} md={3}>
+                        <div className="product_card">
+                            <div className="image_container">
+                                <div className="cover_image product_image">
+                                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.alternate.nl%2Fp%2F600x600%2Fk%2FRazer_Kraken___Kitty_Edition___Quartz_gaming_headset%40%40kh-r59_31.jpg&f=1&nofb=1" alt="" />
+                                </div>
+                            </div>
+                            <div className="product_info">
+                                <div className='d-flex align-items-center gap-15'>
+                                    <a href="#" className="free_shipping">Free shipping</a>
+                                    <div className="stock">
+                                        <div className="stock_status"></div>
+                                        <p className="stock_info">in stock.</p>
+                                    </div>
+                                </div>
+                                <h3 className="product_name">Razer Kraken Kitty Edt Gamming Headset Quartz</h3>
+                                <p className="regular_price">1599$</p>
+                                <p className="discount_price">799$</p>
+
+                            </div>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} sm={3} md={3}>
+                        <div className='view_all'>
+                            <div className="product_card">
+                                <Button className='read_more' variant="text" endIcon={<i class="ri-arrow-right-line"></i>}>
+                                    View all
+                                </Button>
+                            </div>
+                        </div>
+                    </Grid>
+                </Grid>
             </div>
             <div className='gradient_bg'>
                 <div className='business_locations'>
@@ -114,7 +199,7 @@ export default function Home() {
                         </Grid>
                     </Grid>
                 </div>
-                <div className='business_locations'>
+                <div className='business_locations mobile_reverse'>
                     <Grid container spacing={2} maxWidth="lg" margin="auto" alignItems="center">
                         <Grid item xs={12} sm={7} md={7}>
                             <div className='pl_75'>

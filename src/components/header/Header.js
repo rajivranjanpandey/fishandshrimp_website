@@ -28,7 +28,7 @@ function Header(props) {
         <Box onClick={handleDrawerToggle} className="mobile_menu">
             <NavLink className='logo' to='/'>FishandsHrimp</NavLink>
             <List>
-                <NavLink to='/products'>Our Products mobile</NavLink>
+                <NavLink to='/products'>Our Products</NavLink>
                 <NavLink to='/business-locations'>Business Locations</NavLink>
                 <NavLink to='/our-vision'>Our Vision</NavLink>
                 <NavLink to='/about-us'>About us</NavLink>
@@ -44,7 +44,6 @@ function Header(props) {
             <AppBar component="nav" className='desktop_menu_body'>
                 <Toolbar>
                     <div className='mobile_header'>
-                        <NavLink className='logo mobile_logo' to='/'>FishandsHrimp</NavLink>
                         <IconButton
                             color="inherit"
                             aria-label="open drawer"
@@ -54,6 +53,7 @@ function Header(props) {
                         >
                             <MenuIcon />
                         </IconButton>
+                        <NavLink className='logo mobile_logo' to='/'>FishandsHrimp</NavLink>
                     </div>
                     <Typography
                         variant="h6"

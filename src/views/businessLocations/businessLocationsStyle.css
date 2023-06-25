@@ -1,38 +1,39 @@
 .business_location {
-  height: calc(100vh - 70px) !important;
   display: flex;
 }
 
-.business_location .banner_text h1 {
+.business_text {
+  padding: 50px 0;
+}
+
+.business_location .business_text h1 {
   font-size: 50px;
   line-height: 100%;
   margin-bottom: 15px;
-  text-align: center;
   color: var(--color-primary);
 }
 
-.business_location .banner_text p {
-  font-size: 27px;
-  line-height: 40px;
-  text-align: center;
+.business_location .business_text p {
+  font-size: 20px;
+  line-height: 33px;
   color: var(--light-gray);
 }
 
-.business_location {
-  background-image: url(../../assets/business-locations.png);
-  background-position: 0% -100px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
 
 @media (max-width: 899px) {
+  .business_location {
+    margin-top: 20px;
+  }
 
-  .business_locations .hedar_text h2 {
+  .business_locations .business_text h2 {
     font-size: 30px !important;
   }
 
-  .business_locations .banner_text p {
+  .business_location .business_text p {
+    font-size: 16px !important;
+  }
+
+  .business_locations .business_text p {
     line-height: 30px;
   }
 
