@@ -9,31 +9,56 @@ import List from '@mui/material/List';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
+import Menu from '@mui/material/Menu';
+import Button from '@mui/material/Button';
+import MenuItem from '@mui/material/MenuItem';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import Fade from '@mui/material/Fade';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import './headerStyle.css';
 
 const drawerWidth = 350;
 
 function Header(props) {
-    const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
-
-
+    const navigate = useNavigate();
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
     };
 
     const drawer = (
-        <Box onClick={handleDrawerToggle} className="mobile_menu">
-            <NavLink className='logo' to='/'>FishandsHrimp</NavLink>
+        <Box className="mobile_menu">
+            <div className='mobile_logo_body'>
+                <IconButton
+                    color="inherit" onClick={handleDrawerToggle}>
+                    <i class="ri-close-line"></i>
+                </IconButton>
+                <NavLink className='logo' to='/' onClick={handleDrawerToggle}>FishandsHrimp</NavLink>
+            </div>
             <List>
-                <NavLink to='/products'>Our Products</NavLink>
-                <NavLink to='/business-locations'>Business Locations</NavLink>
-                <NavLink to='/our-vision'>Our Vision</NavLink>
-                <NavLink to='/about-us'>About us</NavLink>
-            </List>
-        </Box>
+                <Accordion className='dropdowen'>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                    >
+                        <Typography> Our Products</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <MenuItem onClick={() => { navigate('/products?type=imported'); handleDrawerToggle() }}>Imported products</MenuItem>
+                        <MenuItem onClick={() => { navigate('/products?type=exported'); handleDrawerToggle() }}>Exported products</MenuItem>
+                    </AccordionDetails>
+                </Accordion>
+                <NavLink to='/business-locations' onClick={handleDrawerToggle}>Business Locations</NavLink>
+                <NavLink to='/our-vision' onClick={handleDrawerToggle}>Our Vision</NavLink>
+                <NavLink to='/about-us' onClick={handleDrawerToggle}>About us</NavLink>
+            </List >
+        </Box >
     );
 
     // const container = window !== undefined ? () => window().document.body : undefined;
@@ -63,15 +88,30 @@ function Header(props) {
                         <NavLink className='logo' to='/'>FishandsHrimp</NavLink>
                     </Typography>
                     <Box sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }} className="menu_body">
-                        <NavLink to='/products'>Our Products</NavLink>
-                        <NavLink to='/business-locations'>Business Locations</NavLink>
-                        <NavLink to='/our-vision'>Our Vision</NavLink>
-                        <NavLink to='/about-us'>About us</NavLink>
+                        <div className='menus'>
+                            <Accordion className='dropdowen'>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel1a-content"
+                                    id="panel1a-header"
+                                >
+                                    <Typography>Our Products</Typography>
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <MenuItem onClick={() => navigate('/products?type=imported')}>Imported products</MenuItem>
+                                    <MenuItem onClick={() => navigate('/products?type=exported')}>Exported products</MenuItem>
+                                </AccordionDetails>
+                            </Accordion>
+                            <NavLink to='/business-locations'>Business Locations</NavLink>
+                            <NavLink to='/our-vision'>Our Vision</NavLink>
+                            <NavLink to='/about-us'>About us</NavLink>
+                        </div>
                     </Box>
                 </Toolbar>
             </AppBar>
             <Box component="nav">
                 <Drawer
+                    className='mobile_drawer'
                     variant="temporary"
                     open={mobileOpen}
                     onClose={handleDrawerToggle}
@@ -87,7 +127,7 @@ function Header(props) {
                 </Drawer>
             </Box>
 
-        </Box>
+        </Box >
     );
 }
 

@@ -76,17 +76,6 @@
   font-size: 16px;
 }
 
-.regular_price {
-  text-decoration: line-through;
-}
-
-.discount_price {
-  display: inline-block;
-  font-size: 40px;
-  font-weight: 700;
-}
-
-
 .stock {
   display: flex;
   align-items: center;

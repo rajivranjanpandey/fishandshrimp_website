@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./ourProductsStyle.css"
 import { Grid } from '@mui/material'
+import seaPrawns from "../../assets/sea-prawns.jpg"
+import { useSearchParams } from 'react-router-dom'
 
 
 export default function OurProducts() {
+    const [searchParams, setSearchParams] = useSearchParams();
+    const productType = searchParams.get('type');
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <>
             {/* <div className='product_banner'>
@@ -20,7 +27,7 @@ export default function OurProducts() {
                 <Grid container spacing={2} maxWidth="lg" margin="auto" alignItems="center">
                     <Grid item xs={12} sm={12} md={12}>
                         <div className='product_text'>
-                            <h1>Imported products</h1>
+                            <h1>{productType === 'imported' ? 'Imported' : 'Exported'} products</h1>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..</p>
                         </div>
                     </Grid>
@@ -32,7 +39,7 @@ export default function OurProducts() {
                         <div className="product_card">
                             <div className="image_container">
                                 <div className="cover_image product_image">
-                                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.alternate.nl%2Fp%2F600x600%2Fk%2FRazer_Kraken___Kitty_Edition___Quartz_gaming_headset%40%40kh-r59_31.jpg&f=1&nofb=1" alt="" />
+                                    <img src={seaPrawns} alt="" />
                                 </div>
                             </div>
                             <div className="product_info">
@@ -44,9 +51,6 @@ export default function OurProducts() {
                                     </div>
                                 </div>
                                 <h3 className="product_name">Razer Kraken Kitty Edt Gamming Headset Quartz</h3>
-                                <p className="regular_price">1599$</p>
-                                <p className="discount_price">799$</p>
-
                             </div>
                         </div>
                     </Grid>
@@ -54,7 +58,7 @@ export default function OurProducts() {
                         <div className="product_card">
                             <div className="image_container">
                                 <div className="cover_image product_image">
-                                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.alternate.nl%2Fp%2F600x600%2Fk%2FRazer_Kraken___Kitty_Edition___Quartz_gaming_headset%40%40kh-r59_31.jpg&f=1&nofb=1" alt="" />
+                                    <img src={seaPrawns} alt="" />
                                 </div>
                             </div>
                             <div className="product_info">
@@ -66,9 +70,6 @@ export default function OurProducts() {
                                     </div>
                                 </div>
                                 <h3 className="product_name">Razer Kraken Kitty Edt Gamming Headset Quartz</h3>
-                                <p className="regular_price">1599$</p>
-                                <p className="discount_price">799$</p>
-
                             </div>
                         </div>
                     </Grid>
@@ -76,7 +77,7 @@ export default function OurProducts() {
                         <div className="product_card">
                             <div className="image_container">
                                 <div className="cover_image product_image">
-                                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.alternate.nl%2Fp%2F600x600%2Fk%2FRazer_Kraken___Kitty_Edition___Quartz_gaming_headset%40%40kh-r59_31.jpg&f=1&nofb=1" alt="" />
+                                    <img src={seaPrawns} alt="" />
                                 </div>
                             </div>
                             <div className="product_info">
@@ -88,9 +89,6 @@ export default function OurProducts() {
                                     </div>
                                 </div>
                                 <h3 className="product_name">Razer Kraken Kitty Edt Gamming Headset Quartz</h3>
-                                <p className="regular_price">1599$</p>
-                                <p className="discount_price">799$</p>
-
                             </div>
                         </div>
                     </Grid>

@@ -5,12 +5,40 @@
 .logo {
   font-size: 30px;
   font-weight: 600;
-  color: wheat;
+  color: white;
 }
 
 .desktop_menu_body {
   background-color: var(--color-primary) !important;
   height: 75px;
+}
+
+.dropdowen .MuiAccordionSummary-root {
+  background: transparent;
+  background-color: var(--color-primary);
+  min-height: auto;
+}
+
+.dropdowen .MuiTypography-root {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dropdowen .MuiCollapse-root {
+  position: absolute;
+  background: white;
+  border-radius: 10px;
+  width: 215px;
+}
+
+.dropdowen .MuiAccordionSummary-expandIconWrapper {
+  color: white;
+}
+
+.menus {
+  display: flex !important;
+  align-items: baseline;
 }
 
 .menu_body a {
@@ -20,6 +48,14 @@
   font-weight: 600;
   margin: 0 20px;
   color: white;
+}
+
+.menu_body .menu_btn {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  text-transform: capitalize;
 }
 
 .MuiPaper-root {
@@ -36,10 +72,39 @@
 .mobile_header {
   opacity: 0;
   visibility: hidden;
+  gap: 10px;
 }
+
+
 
 /* responsive media */
 @media (max-width: 899px) {
+  .mobile_menu .dropdowen .MuiAccordionSummary-root {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .mobile_menu .dropdowen .MuiAccordionSummary-expandIconWrapper {
+    color: #313030;
+  }
+
+  .mobile_menu .dropdowen {
+    width: 100% !important;
+  }
+
+  .mobile_menu .dropdowen .MuiTypography-root {
+    color: #313030;
+    font-size: 15px;
+  }
+
+  .mobile_menu .MuiAccordionDetails-root {
+    border-left: 1px solid;
+  }
+
+  .mobile_menu .dropdowen .MuiCollapse-root {
+    position: inherit;
+  }
+
   .mobile_logo {
     font-size: 1.3rem;
   }
@@ -74,9 +139,19 @@
     height: 100%;
   }
 
+  .mobile_drawer .MuiDrawer-paper {
+    width: 290px !important;
+  }
+
   .mobile_menu .logo {
     color: var(--color-primary);
-    font-size: 23px;
+    font-size: 20px;
+  }
+
+  .mobile_logo_body {
+    display: flex;
+    align-items: center;
+    gap: 15px;
   }
 
   .mobile_menu ul {
@@ -86,7 +161,7 @@
   }
 
   .mobile_menu ul a {
-    padding: 20px 0;
+    padding: 15px 0;
     font-size: 15px;
     font-weight: 600;
     color: #313030;
@@ -107,7 +182,7 @@
     margin: auto;
   }
 
-  .MuiPaper-root {
+  /* .MuiPaper-root {
     display: none;
-  }
+  } */
 }

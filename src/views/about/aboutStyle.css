@@ -1,5 +1,5 @@
 .about_section {
-  /* height: calc(100vh - 70px) !important; */
+  margin-top: 20px;
   display: flex;
 }
 
@@ -22,9 +22,6 @@
 
 
 @media (max-width: 899px) {
-  .about_section {
-    margin-top: 20px;
-  }
 
   .about_section .about_text h2 {
     font-size: 30px !important;
