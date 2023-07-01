@@ -51,7 +51,7 @@ function Header(props) {
                     </AccordionSummary>
                     <AccordionDetails>
                         <MenuItem onClick={() => { navigate('/products?type=imported'); handleDrawerToggle() }}>Imported products</MenuItem>
-                        <MenuItem onClick={() => { navigate('/products?type=exported'); handleDrawerToggle() }}>Exported products</MenuItem>
+                        <MenuItem onClick={() => { navigate('/products?type=domestic'); handleDrawerToggle() }}>Domestic products</MenuItem>
                     </AccordionDetails>
                 </Accordion>
                 <NavLink to='/business-locations' onClick={handleDrawerToggle}>Business Locations</NavLink>
@@ -99,7 +99,7 @@ function Header(props) {
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <MenuItem onClick={() => navigate('/products?type=imported')}>Imported products</MenuItem>
-                                    <MenuItem onClick={() => navigate('/products?type=exported')}>Exported products</MenuItem>
+                                    <MenuItem onClick={() => navigate('/products?type=domestic')}>Domestic products</MenuItem>
                                 </AccordionDetails>
                             </Accordion>
                             <NavLink to='/business-locations'>Business Locations</NavLink>

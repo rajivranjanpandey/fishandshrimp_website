@@ -17,8 +17,8 @@ export default function Home() {
                 <Grid container spacing={2} maxWidth="lg" margin="auto" alignItems="center">
                     <Grid item xs={12} sm={5} md={5}>
                         <div className='banner_text'>
-                            <h1>Build a website in 30 seconds with AI.</h1>
-                            <p>The AI website builder that generates an entire website with images and copy in seconds.</p>
+                            <h1>FishandShrimp</h1>
+                            <p>Eat Fresh Stay Healthy</p>
                         </div>
                     </Grid>
                     <Grid item xs={12} sm={7} md={7}>
@@ -163,7 +163,7 @@ export default function Home() {
                     <Grid item xs={12} sm={12} md={12}>
                         <div className='hedar_text'>
                             {/* <p className='sub_hedar_text'>Our Products</p> */}
-                            <h2>Exported Products</h2>
+                            <h2>Domestic Products</h2>
                         </div>
                     </Grid>
                     <Grid item xs={12} sm={3} md={3}>
@@ -240,7 +240,7 @@ export default function Home() {
                                 </div>
                                 <h3 className="product_name">Razer Kraken Kitty Edt Gamming Headset Quartz</h3>
                             </div>
-                            <div className='overlayer' onClick={() => navigate('/products?type=exported')}>
+                            <div className='overlayer' onClick={() => navigate('/products?type=domestic')}>
                                 <div className='view_all'>
                                     <IconButton aria-label="delete" color='Primary' variant="contained">
                                         <i class="ri-arrow-right-line"></i>
