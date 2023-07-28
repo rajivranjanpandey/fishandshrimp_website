@@ -1,7 +1,7 @@
 import React from 'react'
 import "./aboutStyle.css"
 import { Grid } from '@mui/material'
-import businessPic from '../../assets/business-locations.png'
+import businessPic from '../../assets/cover_image/about-us.jpg'
 
 
 export default function About() {
@@ -10,7 +10,7 @@ export default function About() {
             <Grid container spacing={2} maxWidth="lg" margin="auto" alignItems="center">
                 <Grid item xs={12} sm={12} md={12}>
                     <div className=''>
-                        <img src={businessPic} />
+                        <img src={businessPic} alt='About Us' />
                     </div>
                     <div className='about_text'>
                         <h1>About Us</h1>

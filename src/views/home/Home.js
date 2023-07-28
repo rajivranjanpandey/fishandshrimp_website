@@ -2,11 +2,11 @@
 import React from 'react'
 import './homeStyle.css';
 import { Grid, Button, IconButton, ImageListItem } from '@mui/material';
-import MainBanner from '../../assets/mian_banner.png';
-import productBanner from "../../assets/locations.png"
-import VisionPic from "../../assets/Vision.png"
-import seaPrawns from "../../assets/sea-prawns.jpg"
+import MainBanner from '../../assets/main-banner.jpg';
+import locationBanner from "../../assets/cover_image/location.jpg"
+import visionBanner from "../../assets/cover_image/vision.jpg"
 import { useNavigate } from 'react-router';
+import { DOMESTIC_PRODUCTS, IMPORTED_PRODUCTS } from '../../constants';
 
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
                     <Grid item xs={12} sm={5} md={5}>
                         <div className='banner_text'>
                             <h1>FishandShrimp</h1>
-                            <p>Eat Fresh Stay Healthy</p>
+                            {/* <p>Eat Fresh Stay Healthy</p> */}
                         </div>
                     </Grid>
                     <Grid item xs={12} sm={7} md={7}>
@@ -72,90 +72,43 @@ export default function Home() {
                             <h2>Imported Products</h2>
                         </div>
                     </Grid>
-                    <Grid item xs={12} sm={3} md={3}>
-                        <div className="product_card">
-                            <div className="image_container">
-                                <div className="cover_image product_image">
-                                    <img src={seaPrawns} alt="" />
-                                </div>
-                            </div>
-                            <div className="product_info">
-                                <div className='d-flex align-items-center gap-15'>
-                                    <a href="#" className="free_shipping">Free shipping</a>
-                                    <div className="stock">
-                                        <div className="stock_status"></div>
-                                        <p className="stock_info">in stock.</p>
+                    {
+                        IMPORTED_PRODUCTS.map((product, index) => {
+                            return (
+                                <Grid item xs={12} sm={3} md={3}>
+                                    <div className="product_card">
+                                        <div className="image_container">
+                                            <div className="cover_image product_image">
+                                                <img src={product.image} alt={product.name} />
+                                            </div>
+                                        </div>
+                                        <div className="product_info">
+                                            <div className='d-flex align-items-center gap-15'>
+                                                <a href="#" className="free_shipping">Free shipping</a>
+                                                <div className="stock">
+                                                    <div className="stock_status"></div>
+                                                    <p className="stock_info">in stock.</p>
+                                                </div>
+                                            </div>
+                                            <h3 className="product_name">Razer Kraken Kitty Edt Gamming Headset Quartz</h3>
+                                        </div>
+                                        {
+                                            (index === IMPORTED_PRODUCTS.length - 1) &&
+                                            <div className='overlayer' onClick={() => navigate('/products?type=imported')}>
+                                                <div className='view_all'>
+                                                    <IconButton aria-label="delete" color='Primary' variant="contained">
+                                                        <i class="ri-arrow-right-line"></i>
+                                                    </IconButton>
+                                                    <h4>View All</h4>
+                                                </div>
+                                            </div>
+                                        }
+
                                     </div>
-                                </div>
-                                <h3 className="product_name">Razer Kraken Kitty Edt Gamming Headset Quartz</h3>
-                            </div>
-                        </div>
-                    </Grid>
-                    <Grid item xs={12} sm={3} md={3}>
-                        <div className="product_card">
-                            <div className="image_container">
-                                <div className="cover_image product_image">
-                                    <img src={seaPrawns} alt="" />
-                                </div>
-                            </div>
-                            <div className="product_info">
-                                <div className='d-flex align-items-center gap-15'>
-                                    <a href="#" className="free_shipping">Free shipping</a>
-                                    <div className="stock">
-                                        <div className="stock_status"></div>
-                                        <p className="stock_info">in stock.</p>
-                                    </div>
-                                </div>
-                                <h3 className="product_name">Razer Kraken Kitty Edt Gamming Headset Quartz</h3>
-                            </div>
-                        </div>
-                    </Grid>
-                    <Grid item xs={12} sm={3} md={3}>
-                        <div className="product_card">
-                            <div className="image_container">
-                                <div className="cover_image product_image">
-                                    <img src={seaPrawns} alt="" />
-                                </div>
-                            </div>
-                            <div className="product_info">
-                                <div className='d-flex align-items-center gap-15'>
-                                    <a href="#" className="free_shipping">Free shipping</a>
-                                    <div className="stock">
-                                        <div className="stock_status"></div>
-                                        <p className="stock_info">in stock.</p>
-                                    </div>
-                                </div>
-                                <h3 className="product_name">Razer Kraken Kitty Edt Gamming Headset Quartz</h3>
-                            </div>
-                        </div>
-                    </Grid>
-                    <Grid item xs={12} sm={3} md={3}>
-                        <div className="product_card">
-                            <div className="image_container">
-                                <div className="cover_image product_image">
-                                    <img src={seaPrawns} alt="" />
-                                </div>
-                            </div>
-                            <div className="product_info">
-                                <div className='d-flex align-items-center gap-15'>
-                                    <a href="#" className="free_shipping">Free shipping</a>
-                                    <div className="stock">
-                                        <div className="stock_status"></div>
-                                        <p className="stock_info">in stock.</p>
-                                    </div>
-                                </div>
-                                <h3 className="product_name">Razer Kraken Kitty Edt Gamming Headset Quartz</h3>
-                            </div>
-                            <div className='overlayer' onClick={() => navigate('/products?type=imported')}>
-                                <div className='view_all'>
-                                    <IconButton aria-label="delete" color='Primary' variant="contained">
-                                        <i class="ri-arrow-right-line"></i>
-                                    </IconButton>
-                                    <h4>View All</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </Grid>
+                                </Grid>
+                            )
+                        })
+                    }
                 </Grid>
             </div>
             <div className='our_products'>
@@ -166,90 +119,43 @@ export default function Home() {
                             <h2>Domestic Products</h2>
                         </div>
                     </Grid>
-                    <Grid item xs={12} sm={3} md={3}>
-                        <div className="product_card">
-                            <div className="image_container">
-                                <div className="cover_image product_image">
-                                    <img src={seaPrawns} alt="" />
-                                </div>
-                            </div>
-                            <div className="product_info">
-                                <div className='d-flex align-items-center gap-15'>
-                                    <a href="#" className="free_shipping">Free shipping</a>
-                                    <div className="stock">
-                                        <div className="stock_status"></div>
-                                        <p className="stock_info">in stock.</p>
+                    {
+                        DOMESTIC_PRODUCTS.map((product, index) => {
+                            return (
+                                <Grid item xs={12} sm={3} md={3}>
+                                    <div className="product_card">
+                                        <div className="image_container">
+                                            <div className="cover_image product_image">
+                                                <img src={product.image} alt={product.name} />
+                                            </div>
+                                        </div>
+                                        <div className="product_info">
+                                            <div className='d-flex align-items-center gap-15'>
+                                                <a href="#" className="free_shipping">Free shipping</a>
+                                                <div className="stock">
+                                                    <div className="stock_status"></div>
+                                                    <p className="stock_info">in stock.</p>
+                                                </div>
+                                            </div>
+                                            <h3 className="product_name">Razer Kraken Kitty Edt Gamming Headset Quartz</h3>
+                                        </div>
+                                        {
+                                            (index === DOMESTIC_PRODUCTS.length - 1) &&
+                                            <div className='overlayer' onClick={() => navigate('/products?type=imported')}>
+                                                <div className='view_all'>
+                                                    <IconButton aria-label="delete" color='Primary' variant="contained">
+                                                        <i class="ri-arrow-right-line"></i>
+                                                    </IconButton>
+                                                    <h4>View All</h4>
+                                                </div>
+                                            </div>
+                                        }
+
                                     </div>
-                                </div>
-                                <h3 className="product_name">Razer Kraken Kitty Edt Gamming Headset Quartz</h3>
-                            </div>
-                        </div>
-                    </Grid>
-                    <Grid item xs={12} sm={3} md={3}>
-                        <div className="product_card">
-                            <div className="image_container">
-                                <div className="cover_image product_image">
-                                    <img src={seaPrawns} alt="" />
-                                </div>
-                            </div>
-                            <div className="product_info">
-                                <div className='d-flex align-items-center gap-15'>
-                                    <a href="#" className="free_shipping">Free shipping</a>
-                                    <div className="stock">
-                                        <div className="stock_status"></div>
-                                        <p className="stock_info">in stock.</p>
-                                    </div>
-                                </div>
-                                <h3 className="product_name">Razer Kraken Kitty Edt Gamming Headset Quartz</h3>
-                            </div>
-                        </div>
-                    </Grid>
-                    <Grid item xs={12} sm={3} md={3}>
-                        <div className="product_card">
-                            <div className="image_container">
-                                <div className="cover_image product_image">
-                                    <img src={seaPrawns} alt="" />
-                                </div>
-                            </div>
-                            <div className="product_info">
-                                <div className='d-flex align-items-center gap-15'>
-                                    <a href="#" className="free_shipping">Free shipping</a>
-                                    <div className="stock">
-                                        <div className="stock_status"></div>
-                                        <p className="stock_info">in stock.</p>
-                                    </div>
-                                </div>
-                                <h3 className="product_name">Razer Kraken Kitty Edt Gamming Headset Quartz</h3>
-                            </div>
-                        </div>
-                    </Grid>
-                    <Grid item xs={12} sm={3} md={3}>
-                        <div className="product_card">
-                            <div className="image_container">
-                                <div className="cover_image product_image">
-                                    <img src={seaPrawns} alt="" />
-                                </div>
-                            </div>
-                            <div className="product_info">
-                                <div className='d-flex align-items-center gap-15'>
-                                    <a href="#" className="free_shipping">Free shipping</a>
-                                    <div className="stock">
-                                        <div className="stock_status"></div>
-                                        <p className="stock_info">in stock.</p>
-                                    </div>
-                                </div>
-                                <h3 className="product_name">Razer Kraken Kitty Edt Gamming Headset Quartz</h3>
-                            </div>
-                            <div className='overlayer' onClick={() => navigate('/products?type=domestic')}>
-                                <div className='view_all'>
-                                    <IconButton aria-label="delete" color='Primary' variant="contained">
-                                        <i class="ri-arrow-right-line"></i>
-                                    </IconButton>
-                                    <h4>View All</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </Grid>
+                                </Grid>
+                            )
+                        })
+                    }
                 </Grid>
             </div>
             <div className='gradient_bg'>
@@ -257,7 +163,7 @@ export default function Home() {
                     <Grid container spacing={2} maxWidth="lg" margin="auto" alignItems="center">
                         <Grid item xs={12} sm={5} md={5}>
                             <div className='location_pic'>
-                                <img src={productBanner} />
+                                <img src={locationBanner} alt='Business Location' />
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={7} md={7}>
@@ -289,7 +195,7 @@ export default function Home() {
                         </Grid>
                         <Grid item xs={12} sm={5} md={5}>
                             <div>
-                                <img src={VisionPic} />
+                                <img src={visionBanner} alt='Our Vision' />
                             </div>
                         </Grid>
                     </Grid>

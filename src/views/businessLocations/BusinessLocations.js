@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid } from '@mui/material'
-import businessLocations from "../../assets/business-locations.png"
+import businessLocations from "../../assets/cover_image/location.jpg"
 import "./businessLocationsStyle.css"
 
 export default function BusinessLocations() {
@@ -9,7 +9,7 @@ export default function BusinessLocations() {
             <Grid container spacing={2} maxWidth="lg" margin="auto" alignItems="center">
                 <Grid item xs={12} sm={12} md={12}>
                     <div className=''>
-                        <img src={businessLocations} />
+                        <img src={businessLocations} alt='Business Location' />
                     </div>
                     <div className='business_text'>
                         <h1>Our business locations</h1>

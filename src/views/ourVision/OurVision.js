@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid } from '@mui/material'
 import "./OurVisionStyle.css"
-import VisionPic from "../../assets/Vision.png"
+import VisionPic from "../../assets/cover_image/vision.jpg"
 
 
 
@@ -11,7 +11,7 @@ export default function OurVision() {
             <Grid container spacing={2} maxWidth="lg" margin="auto" alignItems="center">
                 <Grid item xs={12} sm={12} md={12}>
                     <div className=''>
-                        <img src={VisionPic} />
+                        <img src={VisionPic} alt='Our Vision' />
                     </div>
                     <div className='our_vision_text'>
                         <h1>Our Versions</h1>
