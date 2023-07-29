@@ -2,7 +2,8 @@
 import React from 'react'
 import './homeStyle.css';
 import { Grid, Button, IconButton, ImageListItem } from '@mui/material';
-import MainBanner from '../../assets/main-banner.jpg';
+import MainBannerDesktop from '../../assets/main-banner/desktop.jpg'
+import MainBannerMobile from '../../assets/main-banner/mobile.jpg';
 import locationBanner from "../../assets/cover_image/location.jpg"
 import visionBanner from "../../assets/cover_image/vision.jpg"
 import { useNavigate } from 'react-router';
@@ -15,15 +16,14 @@ export default function Home() {
         <>
             <div className='banner_section'>
                 <Grid container spacing={2} maxWidth="lg" margin="auto" alignItems="center">
-                    <Grid item xs={12} sm={5} md={5}>
+                    {/* <Grid item xs={12} sm={5} md={5}>
                         <div className='banner_text'>
                             <h1>FishandShrimp</h1>
-                            {/* <p>Eat Fresh Stay Healthy</p> */}
                         </div>
-                    </Grid>
-                    <Grid item xs={12} sm={7} md={7}>
+                    </Grid> */}
+                    <Grid item xs={12} sm={12} md={12}>
                         <div>
-                            <img src={MainBanner} alt='fishandshrimp' />
+                            <img src={window.isMobileView ? MainBannerMobile : MainBannerDesktop} alt='fishandshrimp' />
                         </div>
                     </Grid>
                 </Grid>
@@ -169,33 +169,33 @@ export default function Home() {
                         <Grid item xs={12} sm={7} md={7}>
                             <div className='pl_75'>
                                 <div className='others_hedar_text'>
-                                    <p className='sub_hedar_text'>Locations</p>
-                                    <h2>Business Locations</h2>
+                                    {/* <p className='sub_hedar_text'>Locations</p>
+                                    <h2>Business Locations</h2> */}
                                     <p>The AI website builder that generates an entire website with images and copy in seconds.</p>
                                 </div>
-                                <Button className='read_more' variant="text" endIcon={<i class="ri-arrow-right-line"></i>}>
+                                <Button className='read_more' variant="text" endIcon={<i class="ri-arrow-right-line"></i>} onClick={() => navigate('/business-locations')}>
                                     Read more
                                 </Button>
                             </div>
                         </Grid>
                     </Grid>
                 </div>
-                <div className='business_locations mobile_reverse'>
+                <div className={`business_locations ${window.isMobileView ? 'mobile_reverse' : ''}`}>
                     <Grid container spacing={2} maxWidth="lg" margin="auto" alignItems="center">
-                        <Grid item xs={12} sm={7} md={7}>
-                            <div className='pl_75'>
-                                <div className='others_hedar_text'>
-                                    <h2>Our Vision</h2>
-                                    <p>The AI website builder that generates an entire website with images and copy in seconds.</p>
-                                </div>
-                                <Button className='read_more' variant="text" endIcon={<i class="ri-arrow-right-line"></i>}>
-                                    Read more
-                                </Button>
-                            </div>
-                        </Grid>
                         <Grid item xs={12} sm={5} md={5}>
                             <div>
                                 <img src={visionBanner} alt='Our Vision' />
+                            </div>
+                        </Grid>
+                        <Grid item xs={12} sm={7} md={7}>
+                            <div className='pl_75'>
+                                <div className='others_hedar_text'>
+                                    {/* <h2>Our Vision</h2> */}
+                                    <p>The AI website builder that generates an entire website with images and copy in seconds.</p>
+                                </div>
+                                <Button className='read_more' variant="text" endIcon={<i class="ri-arrow-right-line"></i>} onClick={() => navigate('/our-vision')}>
+                                    Read more
+                                </Button>
                             </div>
                         </Grid>
                     </Grid>
