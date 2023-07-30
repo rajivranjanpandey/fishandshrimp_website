@@ -17,6 +17,7 @@
 }
 
 .our_products {
+  margin-top: 25px;
   /* background-color: #ccc4ff; */
   /* padding: 55px 0; */
 }
@@ -131,11 +132,14 @@
 
   .banner_section {
     height: inherit !important;
-    padding: 55px 0;
+  }
+
+  .banner_section .MuiGrid-container {
+    padding: 0px !important;
   }
 
   .mobile_reverse .MuiGrid-container {
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
     gap: 35px;
   }
 
@@ -175,6 +179,7 @@
 
   .business_locations .pl_75 {
     padding: 0;
+    margin-top: 10px;
   }
 
   .others_hedar_text p {
@@ -191,5 +196,19 @@
 
   .gradient_bg .business_locations {
     border-top: 1px solid #ccc;
+  }
+}
+
+@media (min-width: 1025px) {
+  .banner_section .MuiGrid-container {
+    margin: 0;
+  }
+
+  .banner_section .css-1qet4ns-MuiGrid-root>.MuiGrid-item {
+    padding-left: 0px !important;
+  }
+
+  .banner_section img {
+    width: 127.5%;
   }
 }

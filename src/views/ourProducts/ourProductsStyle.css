@@ -72,7 +72,8 @@
 }
 
 .product_name {
-  margin: 10px 0 20px 0;
+  /* margin: 10px 0 20px 0; */
+  margin: 10px 0 0 0;
   font-size: 16px;
 }
 

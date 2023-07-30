@@ -48,14 +48,14 @@ export default function OurProducts() {
                                             </div>
                                         </div>
                                         <div className="product_info">
-                                            <div className='d-flex align-items-center gap-15'>
+                                            {/* <div className='d-flex align-items-center gap-15'>
                                                 <a href="#" className="free_shipping">Free shipping</a>
                                                 <div className="stock">
                                                     <div className="stock_status"></div>
                                                     <p className="stock_info">in stock.</p>
                                                 </div>
-                                            </div>
-                                            <h3 className="product_name">Razer Kraken Kitty Edt Gamming Headset Quartz</h3>
+                                            </div> */}
+                                            <h3 className="product_name">{product.name}</h3>
                                         </div>
                                     </div>
                                 </Grid>

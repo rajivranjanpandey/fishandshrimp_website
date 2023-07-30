@@ -1,23 +1,30 @@
-import CrabImage from './assets/imported_products/crab.png';
+
 import GizerdImage from './assets/imported_products/gizerd.png';
-import LobstarImage from './assets/imported_products/lobstar.png';
-import OctopusImage from './assets/imported_products/octopus.jpg';
+import NorwaySalmonImage from './assets/imported_products/norway-salmon.png';
+import UgandaImage from './assets/imported_products/uganda.jpg';
+import VietnamBasaImage from './assets/imported_products/vietnam_basa.png';
 
 import PomfretImage from './assets/domestic_products/pomfret.png';
 import ShrimpImage from './assets/domestic_products/shrimp.png';
 import SquidImage from './assets/domestic_products/squid.png';
 import VetkiImage from './assets/domestic_products/vetki.png';
+import CrabImage from './assets/domestic_products/crab.png';
+import LobstarImage from './assets/domestic_products/lobstar.png';
+import OctopusImage from './assets/domestic_products/octopus.jpg';
 
 export const IMPORTED_PRODUCTS = [
-    { image: CrabImage, name: 'Crab' },
-    { image: GizerdImage, name: 'Gizerd' },
-    { image: LobstarImage, name: 'Lobstar' },
-    { image: OctopusImage, name: 'Octopus' },
+    { image: VietnamBasaImage, name: 'Vietnam basa' },
+    { image: NorwaySalmonImage, name: 'Norway salmon' },
+    { image: GizerdImage, name: 'Gizerd from barma' },
+    { image: UgandaImage, name: 'Nile perch from uganda' },
 ]
 
 export const DOMESTIC_PRODUCTS = [
-    { image: PomfretImage, name: 'Crab' },
-    { image: ShrimpImage, name: 'Gizerd' },
-    { image: SquidImage, name: 'Lobstar' },
-    { image: VetkiImage, name: 'Octopus' },
+    { image: ShrimpImage, name: 'Shrimp' },
+    { image: CrabImage, name: 'Crab' },
+    { image: SquidImage, name: 'Squid' },
+    { image: OctopusImage, name: 'Octopus' },
+    { image: LobstarImage, name: 'Lobstar' },
+    { image: PomfretImage, name: 'Pomfret' },
+    { image: VetkiImage, name: 'Vetki' },
 ]

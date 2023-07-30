@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
@@ -10,17 +9,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { NavLink, useNavigate } from 'react-router-dom';
-import Menu from '@mui/material/Menu';
-import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import Fade from '@mui/material/Fade';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import './headerStyle.css';
+import companyLogo from '../../assets/logo.png';
 
 const drawerWidth = 350;
 
@@ -38,7 +34,9 @@ function Header(props) {
                     color="inherit" onClick={handleDrawerToggle}>
                     <i class="ri-close-line"></i>
                 </IconButton>
-                <NavLink className='logo' to='/' onClick={handleDrawerToggle}>FishandsHrimp</NavLink>
+                <NavLink className='logo' to='/' onClick={handleDrawerToggle}>
+                    FishandsHrimp
+                </NavLink>
             </div>
             <List>
                 <Accordion className='dropdowen'>
@@ -78,14 +76,19 @@ function Header(props) {
                         >
                             <MenuIcon />
                         </IconButton>
-                        <NavLink className='logo mobile_logo' to='/'>FishandsHrimp</NavLink>
+                        <img src={companyLogo} style={{ height: '45px', width: '45px' }} alt='logo' />
+                        <NavLink className='logo mobile_logo' to='/'>FishandShrimp</NavLink>
                     </div>
+                    {
+                        !window.isMobileView &&
+                        <img src={companyLogo} style={{ height: '68px', width: '68px' }} alt='logo' />
+                    }
                     <Typography
                         variant="h6"
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'none', md: 'block' } }}
                     >
-                        <NavLink className='logo' to='/'>FishandsHrimp</NavLink>
+                        <NavLink className='logo' to='/'>FishandShrimp</NavLink>
                     </Typography>
                     <Box sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }} className="menu_body">
                         <div className='menus'>

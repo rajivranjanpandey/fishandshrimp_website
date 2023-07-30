@@ -1,7 +1,7 @@
 
 import React from 'react'
 import './homeStyle.css';
-import { Grid, Button, IconButton, ImageListItem } from '@mui/material';
+import { Grid, Button, IconButton } from '@mui/material';
 import MainBannerDesktop from '../../assets/main-banner/desktop.jpg'
 import MainBannerMobile from '../../assets/main-banner/mobile.jpg';
 import locationBanner from "../../assets/cover_image/location.jpg"
@@ -28,42 +28,6 @@ export default function Home() {
                     </Grid>
                 </Grid>
             </div>
-            {/* <div className='our_products'>
-                <Grid container spacing={2} maxWidth="lg" margin="auto" alignItems="center">
-                    <Grid item xs={12} sm={12} md={12}>
-                        <div className='hedar_text'>
-                            <p className='sub_hedar_text'>Best Products</p>
-                            <h2>Our Products</h2>
-                        </div>
-                    </Grid>
-                    <Grid item xs={12} sm={12} md={12}>
-                        <div className='our_product_info'>
-                            <ImageList
-                                variant="quilted"
-                                cols={4}
-                                rowHeight={250}
-                            >
-                                {itemData.map((item) => (
-                                    <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
-                                        <img
-                                            {...srcset(item.img, 250, item.rows, item.cols)}
-                                            alt={item.title}
-                                            loading="lazy"
-                                        />
-                                    </ImageListItem>
-                                ))}
-                            </ImageList>
-                        </div>
-                    </Grid>
-                    <Grid item xs={12} sm={12} md={12}>
-                        <div className='read_more_body'>
-                            <Button className='read_more' variant="text" endIcon={<i class="ri-arrow-right-line"></i>}>
-                                Read more
-                            </Button>
-                        </div>
-                    </Grid>
-                </Grid>
-            </div> */}
             <div className='our_products'>
                 <Grid container spacing={2} maxWidth="lg" margin="auto" alignItems="center">
                     <Grid item xs={12} sm={12} md={12}>
@@ -83,14 +47,14 @@ export default function Home() {
                                             </div>
                                         </div>
                                         <div className="product_info">
-                                            <div className='d-flex align-items-center gap-15'>
+                                            {/* <div className='d-flex align-items-center gap-15'>
                                                 <a href="#" className="free_shipping">Free shipping</a>
                                                 <div className="stock">
                                                     <div className="stock_status"></div>
                                                     <p className="stock_info">in stock.</p>
                                                 </div>
-                                            </div>
-                                            <h3 className="product_name">Razer Kraken Kitty Edt Gamming Headset Quartz</h3>
+                                            </div> */}
+                                            <h3 className="product_name">{product.name}</h3>
                                         </div>
                                         {
                                             (index === IMPORTED_PRODUCTS.length - 1) &&
@@ -120,7 +84,7 @@ export default function Home() {
                         </div>
                     </Grid>
                     {
-                        DOMESTIC_PRODUCTS.map((product, index) => {
+                        DOMESTIC_PRODUCTS.slice(0, 4).map((product, index) => {
                             return (
                                 <Grid item xs={12} sm={3} md={3}>
                                     <div className="product_card">
@@ -130,17 +94,17 @@ export default function Home() {
                                             </div>
                                         </div>
                                         <div className="product_info">
-                                            <div className='d-flex align-items-center gap-15'>
+                                            {/* <div className='d-flex align-items-center gap-15'>
                                                 <a href="#" className="free_shipping">Free shipping</a>
                                                 <div className="stock">
                                                     <div className="stock_status"></div>
                                                     <p className="stock_info">in stock.</p>
                                                 </div>
-                                            </div>
-                                            <h3 className="product_name">Razer Kraken Kitty Edt Gamming Headset Quartz</h3>
+                                            </div> */}
+                                            <h3 className="product_name">{product.name}</h3>
                                         </div>
                                         {
-                                            (index === DOMESTIC_PRODUCTS.length - 1) &&
+                                            (index === 3) &&
                                             <div className='overlayer' onClick={() => navigate('/products?type=imported')}>
                                                 <div className='view_all'>
                                                     <IconButton aria-label="delete" color='Primary' variant="contained">

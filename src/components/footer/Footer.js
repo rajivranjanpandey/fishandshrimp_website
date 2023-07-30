@@ -1,7 +1,7 @@
 import React from 'react'
-import { Grid, Button, Typography } from '@mui/material';
 
 import './footerStyle.css';
+import { NavLink } from 'react-router-dom';
 
 
 export default function Footer() {
@@ -11,7 +11,7 @@ export default function Footer() {
                 <div className='container'>
                     <div className='footer_grid'>
                         <div className='footer_about'>
-                            <h2>FishandsHrimp</h2>
+                            <h2>FishandShrimp</h2>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                         </div>
                         <div className=''>
@@ -19,10 +19,10 @@ export default function Footer() {
                                 <div className='footer_item link'>
                                     <h4 class="footer_item_title">Explore</h4>
                                     <ul>
-                                        <li><a href='#'>Our Products</a></li>
-                                        <li><a href='#'>Business Locations</a></li>
-                                        <li><a href='#'>Our Vision</a></li>
-                                        <li><a href='#'>About us</a></li>
+                                        <li><NavLink to='/products?type=imported'>Our Products</NavLink></li>
+                                        <li><NavLink to='/business-locations'>Business Locations</NavLink></li>
+                                        <li><NavLink to='/business-locations'>Our Vision</NavLink></li>
+                                        <li><NavLink to='/about-us'>About us</NavLink></li>
                                     </ul>
                                 </div>
                                 <div className='footer_item contact'>
@@ -57,7 +57,7 @@ export default function Footer() {
                 <div className='container'>
                     <div className='footer_grid'>
                         <div class="copy_right">
-                            <p>© Copyright 2023. All Rights Reserved by  <a href="#">FishandsHrimp</a></p>
+                            <p>© Copyright 2023. All Rights Reserved by  <NavLink to='/'>FishandsHrimp</NavLink></p>
                         </div>
                         <div class="terms">
                             <ul>
