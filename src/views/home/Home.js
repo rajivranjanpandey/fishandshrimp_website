@@ -37,7 +37,7 @@ export default function Home() {
                         </div>
                     </Grid>
                     {
-                        IMPORTED_PRODUCTS.map((product, index) => {
+                        IMPORTED_PRODUCTS.slice(0, 4).map((product, index) => {
                             return (
                                 <Grid item xs={12} sm={3} md={3}>
                                     <div className="product_card">
@@ -57,7 +57,7 @@ export default function Home() {
                                             <h3 className="product_name">{product.name}</h3>
                                         </div>
                                         {
-                                            (index === IMPORTED_PRODUCTS.length - 1) &&
+                                            (index === 3) &&
                                             <div className='overlayer' onClick={() => navigate('/products?type=imported')}>
                                                 <div className='view_all'>
                                                     <IconButton aria-label="delete" color='Primary' variant="contained">
