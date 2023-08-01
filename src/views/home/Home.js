@@ -105,7 +105,7 @@ export default function Home() {
                                         </div>
                                         {
                                             (index === 3) &&
-                                            <div className='overlayer' onClick={() => navigate('/products?type=imported')}>
+                                            <div className='overlayer' onClick={() => navigate('/products?type=domestic')}>
                                                 <div className='view_all'>
                                                     <IconButton aria-label="delete" color='Primary' variant="contained">
                                                         <i class="ri-arrow-right-line"></i>
