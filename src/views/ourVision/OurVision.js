@@ -15,8 +15,20 @@ export default function OurVision() {
                     </div>
                     <div className='our_vision_text'>
                         <h1>Our Vision</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        <p>
+                            <p><b>We aim to elevate your dining experience with a premium seafood range.</b></p>
+                            <br />
+                            <p><b>Fish and Shrimp has been started with the vision of:</b></p>
+
+                            <ul style={{ marginLeft: '3rem' }}>
+                                <li>Enriching your taste buds with premium quality exotic seafood.</li>
+                                <li>Providing the freshest, highest-quality seafood to customers, sourced from trusted suppliers and fishermen.</li>
+                                <li>Redefining seafood in terms of texture, taste, and flavor that can expand the gastronomic horizons.</li>
+                                <li>Aiming to leverage technology to enhance our services, from user-friendly ordering to eco-friendly packaging.</li>
+                                <li>Being customer-centric, with a goal to create an exceptional seafood experience and to cater to the customer’s needs with a diverse selection.</li>
+                                <li>Prioritizing transparency, sharing information about the origin and sourcing of our seafood, so customers can make informed choices.</li>
+                                <li>Promising to deliver seafood that's not only sustainable but also exceptionally fresh, ensuring every meal is a culinary delight.</li>
+                            </ul>
                         </p>
                     </div>
                 </Grid>

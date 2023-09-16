@@ -31,6 +31,10 @@
     padding-bottom: 17px;
     font-weight: 500;
     color: #dedede;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
 }
 
 .footer_item_title {

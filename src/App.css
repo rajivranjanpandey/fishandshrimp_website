@@ -66,12 +66,21 @@ p {
   word-break: break-all;
 }
 
-ul,
+/* ul,
 li {
   margin: 0;
   padding: 0;
   list-style: none;
   list-style-type: none;
+} */
+.margin-top-content {
+  margin-top: 0.6rem;
+  ;
+}
+
+.margin-bottom-content {
+  margin-bottom: 0.6rem;
+  ;
 }
 
 img {

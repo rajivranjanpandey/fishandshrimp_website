@@ -32,7 +32,7 @@ export default function Home() {
                 <Grid container spacing={2} maxWidth="lg" margin="auto" alignItems="center">
                     <Grid item xs={12} sm={12} md={12}>
                         <div className='hedar_text'>
-                            <p className='sub_hedar_text'>Our Products</p>
+                            <p className='sub_hedar_text'>Fish and Shrimp Offerings</p>
                             <h2>Imported Products</h2>
                         </div>
                     </Grid>
@@ -135,7 +135,7 @@ export default function Home() {
                                 <div className='others_hedar_text'>
                                     {/* <p className='sub_hedar_text'>Locations</p>
                                     <h2>Business Locations</h2> */}
-                                    <p>The AI website builder that generates an entire website with images and copy in seconds.</p>
+                                    <p>Fish and Shrimp have its operational areas all over India including West Bengal, Odisha, Chhattisgarh, Haryana, and Patna. With our extensive customers, we also offer delivery for our products across India.</p>
                                 </div>
                                 <Button className='read_more' variant="text" endIcon={<i class="ri-arrow-right-line"></i>} onClick={() => navigate('/business-locations')}>
                                     Read more
@@ -155,7 +155,7 @@ export default function Home() {
                             <div className='pl_75'>
                                 <div className='others_hedar_text'>
                                     {/* <h2>Our Vision</h2> */}
-                                    <p>The AI website builder that generates an entire website with images and copy in seconds.</p>
+                                    <p>Delivering our valued customers with excellence, experience, and quality.</p>
                                 </div>
                                 <Button className='read_more' variant="text" endIcon={<i class="ri-arrow-right-line"></i>} onClick={() => navigate('/our-vision')}>
                                     Read more
