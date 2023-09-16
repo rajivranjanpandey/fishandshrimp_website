@@ -72,6 +72,14 @@
     gap: 50px;
 }
 
+.footer_grid_columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
 @media (max-width: 899px) {
     .footer_body {
         padding: 55px 0;
@@ -100,6 +108,11 @@
 
     .terms ul {
         justify-content: center;
+    }
+
+    .footer_grid_columns {
+        justify-content: center;
+        gap: 31px;
     }
 }
 

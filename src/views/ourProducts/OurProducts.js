@@ -34,25 +34,31 @@ export default function OurProducts() {
                                 {
                                     isImportedProduct ?
                                         <>
-                                            <b>Global Excellence served with the best quality seafood</b>
-                                            Fish and Shrimp lets you discover the best taste in the world with every dining experience. Our imported fish range has diverse flavors, textures, and culinary ventures. Get introduced to the essence of international without compromising on freshness and quality, with Imported pangasius from Vietnam, Salmon fish from Norway, Hilsha fish from Bangladesh, and more.
-                                            <b>RISTRO</b> is the leading brand we work with for Pangasius and Basa fish and it offers
-                                            <b>5 products:</b>
-
-                                            1. Ristro premium (Vietnam panga)
-                                            2. Ristro gold (Vietnam panga)
-                                            3. Ristro delight ( Vietnam panga)
-                                            4. Ristro Delight plus (Vietnam panga)
-                                            5. Ristro Aqua (Basa)
-                                            Explore the whole range of our imported products:
-
-                                            Vietnam Basa
-                                            Norway Salmon
-                                            Gizzard from Barma
-                                            Nile perch from Uganda
-                                            Hilsha from Bangladesh
-
-
+                                            <p>
+                                                <b>Global Excellence served with the best quality seafood.</b>
+                                                <p>Fish and Shrimp lets you discover the best taste in the world with every dining experience.
+                                                    Our imported fish range has diverse flavors, textures, and culinary ventures.
+                                                    Get introduced to the essence of international without compromising on freshness and quality, with Imported pangasius from Vietnam, Salmon fish from Norway, Hilsha fish from Bangladesh, and more.
+                                                </p>
+                                                <span><strong>RISTRO</strong> is the leading brand we work with for Pangasius and Basa fish and it offers</span>
+                                                <p><strong>5 products:</strong></p>
+                                                <ol className='margin-top-content' style={{ marginLeft: '1.2rem' }}>
+                                                    <li>Ristro premium (Vietnam panga)</li>
+                                                    <li>Ristro gold (Vietnam panga)</li>
+                                                    <li>Ristro delight (Vietnam panga)</li>
+                                                    <li>Ristro Delight plus (Vietnam panga)</li>
+                                                    <li>Ristro Aqua (Basa)</li>
+                                                </ol>
+                                                <br />
+                                                <h3>Explore the whole range of our imported products:</h3>
+                                                <ul className='margin-top-content' style={{ marginLeft: '0.1rem', listStyle: 'none' }}>
+                                                    <li>Vietnam Basa</li>
+                                                    <li>Norway Salmon</li>
+                                                    <li>Gizzard from Barma</li>
+                                                    <li>Nile perch from Uganda</li>
+                                                    <li>Hilsha from Bangladesh</li>
+                                                </ul>
+                                            </p>
                                         </>
                                         :
                                         <>

@@ -155,7 +155,7 @@ export default function Home() {
                             <div className='pl_75'>
                                 <div className='others_hedar_text'>
                                     {/* <h2>Our Vision</h2> */}
-                                    <p>Delivering our valued customers with excellence, experience, and quality.</p>
+                                    <p style={{ fontSize: '31px' }}>Delivering to our valued customers with our excellence,experience, and quality.</p>
                                 </div>
                                 <Button className='read_more' variant="text" endIcon={<i class="ri-arrow-right-line"></i>} onClick={() => navigate('/our-vision')}>
                                     Read more

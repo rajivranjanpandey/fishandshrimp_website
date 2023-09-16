@@ -1,7 +1,10 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
+import fssaiImg from '../../assets/trade_logo/fssai.png';
+import haccpImg from '../../assets/trade_logo/images.jpeg';
+import isoImg from '../../assets/trade_logo/iso.jpeg';
 
 import './footerStyle.css';
-import { NavLink } from 'react-router-dom';
 
 
 export default function Footer() {
@@ -46,6 +49,7 @@ export default function Footer() {
                                                 <a href="tel:7052602377"> +91 7052602377</a>
                                             </div>
                                         </li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -55,12 +59,26 @@ export default function Footer() {
             </div>
             <div class="footer_bottom footer_body">
                 <div className='container'>
-                    <div className='footer_grid'>
+                    <div className='footer_grid_columns'>
                         <div class="copy_right">
-                            <p>© Copyright 2023. All Rights Reserved by  <NavLink to='/'>FishandsHrimp</NavLink></p>
+                            © Copyright 2023. All Rights Reserved by <br />
+                            <NavLink to='/'>FishandsHrimp</NavLink>
+                        </div>
+                        <div>
+                            <ul style={{ listStyle: 'none', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                                <li>
+                                    <img src={fssaiImg} alt='image' width='30' height='30' />
+                                </li>
+                                <li>
+                                    <img src={haccpImg} width='30' height='30' alt='image' />
+                                </li>
+                                <li>
+                                    <img src={isoImg} width='30' height='30' alt='image' />
+                                </li>
+                            </ul>
                         </div>
                         <div class="terms">
-                            <ul>
+                            <ul style={{ listStyle: 'none' }}>
                                 <li>
                                     <a href="#">Terms &amp; Conditions</a>
                                 </li>
