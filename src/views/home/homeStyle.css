@@ -107,6 +107,15 @@
   font-weight: 700;
 }
 
+.product_name {
+  font-family: 'remixicon';
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1.7rem !important;
+  letter-spacing: 0.5px;
+  word-break: break-word;
+}
+
 /* .view_all .product_card {
   height: 250px;
   border-radius: 50%;

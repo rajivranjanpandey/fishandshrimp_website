@@ -135,7 +135,7 @@ export default function Home() {
                                 <div className='others_hedar_text'>
                                     {/* <p className='sub_hedar_text'>Locations</p>
                                     <h2>Business Locations</h2> */}
-                                    <p>Fish and Shrimp have its operational areas all over India including West Bengal, Odisha, Chhattisgarh, Haryana, and Patna. With our extensive customers, we also offer delivery for our products across India.</p>
+                                    <p className='break-word'>Fish and Shrimp have its operational areas all over India including West Bengal, Odisha, Chhattisgarh, Haryana, and Patna. With our extensive customers, we also offer delivery for our products across India.</p>
                                 </div>
                                 <Button className='read_more' variant="text" endIcon={<i class="ri-arrow-right-line"></i>} onClick={() => navigate('/business-locations')}>
                                     Read more
@@ -155,7 +155,7 @@ export default function Home() {
                             <div className='pl_75'>
                                 <div className='others_hedar_text'>
                                     {/* <h2>Our Vision</h2> */}
-                                    <p style={{ fontSize: '31px' }}>Delivering to our valued customers with our excellence,experience, and quality.</p>
+                                    <p className='break-word'>Delivering to our valued customers with our excellence,experience, and quality.</p>
                                 </div>
                                 <Button className='read_more' variant="text" endIcon={<i class="ri-arrow-right-line"></i>} onClick={() => navigate('/our-vision')}>
                                     Read more

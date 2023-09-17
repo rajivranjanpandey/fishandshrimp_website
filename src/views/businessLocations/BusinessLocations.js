@@ -13,7 +13,7 @@ export default function BusinessLocations() {
                     </div>
                     <div className='business_text'>
                         <h1>Our business locations</h1>
-                        <p>
+                        <p className='text_content'>
                             <p><b>Discover the locations of Fish and Shrimp functions</b></p>
                             <br />
                             <p>Fish and Shrimp operates in a wide range of locations across India and has a significant demographical presence. It helps us to reach our clients with ease while keeping the charges and pricing of the products in an affordable range.</p>

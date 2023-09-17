@@ -17,6 +17,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import './headerStyle.css';
 import companyLogo from '../../assets/logo.png';
+import { Divider } from '@mui/material';
 
 const drawerWidth = 350;
 
@@ -35,7 +36,7 @@ function Header(props) {
                     <i class="ri-close-line"></i>
                 </IconButton>
                 <NavLink className='logo' to='/' onClick={handleDrawerToggle}>
-                    FishandsHrimp
+                    Fish And Shrimp
                 </NavLink>
             </div>
             <List>
@@ -52,8 +53,11 @@ function Header(props) {
                         <MenuItem onClick={() => { navigate('/products?type=domestic'); handleDrawerToggle() }}>Domestic products</MenuItem>
                     </AccordionDetails>
                 </Accordion>
+                <Divider />
                 <NavLink to='/business-locations' onClick={handleDrawerToggle}>Business Locations</NavLink>
+                <Divider />
                 <NavLink to='/our-vision' onClick={handleDrawerToggle}>Our Vision</NavLink>
+                <Divider />
                 <NavLink to='/about-us' onClick={handleDrawerToggle}>About us</NavLink>
             </List >
         </Box >
@@ -77,7 +81,7 @@ function Header(props) {
                             <MenuIcon />
                         </IconButton>
                         <img src={companyLogo} style={{ height: '45px', width: '45px' }} alt='logo' />
-                        <NavLink className='logo mobile_logo' to='/'>FishandShrimp</NavLink>
+                        <NavLink className='logo mobile_logo' to='/'>Fish And Shrimp</NavLink>
                     </div>
                     {
                         !window.isMobileView &&
@@ -88,7 +92,7 @@ function Header(props) {
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'none', md: 'block' } }}
                     >
-                        <NavLink className='logo' to='/'>FishandShrimp</NavLink>
+                        <NavLink className='logo' to='/'>Fish And Shrimp</NavLink>
                     </Typography>
                     <Box sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }} className="menu_body">
                         <div className='menus'>

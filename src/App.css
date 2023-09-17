@@ -124,6 +124,14 @@ a {
   display: flex;
 }
 
+.break-word {
+  word-break: break-word;
+}
+
+.text_content p {
+  word-break: break-word;
+}
+
 @media (max-width: 899px) {
 
   h1,
@@ -150,5 +158,6 @@ a {
 
   .margin-left-content {
     margin-left: 1.5rem;
+    margin-top: 0.5rem;
   }
 }

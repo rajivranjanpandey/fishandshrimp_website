@@ -14,7 +14,7 @@ export default function About() {
                     </div>
                     <div className='about_text'>
                         <h1>About Us</h1>
-                        <p>
+                        <p className='text_content'>
                             <h3>Company Overview</h3>
                             <p>The organization Fish and Shrimp started in the year 2019 as a small business. With a vision and mission to cater to premium highest quality standards of seafood from sourcing to delivery.</p>
 
@@ -46,7 +46,7 @@ export default function About() {
 
                             <h3 className='margin-top-content'>Meet Our Team</h3>
                             <div>
-                                <div style={{ marginBottom: '0.6rem' }}>
+                                <div style={{ marginBottom: '0.6rem', marginTop: '0.5rem' }}>
                                     <h3>Sampad Das</h3>
                                     <strong>Accounts Manager</strong>
                                     <p>Specialized in Financial Accounting.</p>

@@ -87,11 +87,15 @@
 
     .footer_grid {
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 9px;
     }
 
     .footer_item {
         margin-top: 25px;
+    }
+
+    .footer_item_title {
+        margin-bottom: 15px;
     }
 
     .footer_info_body {
