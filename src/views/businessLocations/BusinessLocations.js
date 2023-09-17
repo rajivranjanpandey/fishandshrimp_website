@@ -24,7 +24,7 @@ export default function BusinessLocations() {
                             <p><b>The locations we operate are:</b></p>
                             <br />
                             <h2>West Bengal</h2>
-                            <ul style={{ marginLeft: '3rem' }}>
+                            <ul className='margin-left-content'>
                                 <li>Kolkata</li>
                                 <li>Howrah</li>
                                 <li>Hooghly</li>

@@ -70,7 +70,7 @@ export default function About() {
                             <h2>Quality Certifications</h2>
                             <p>The certifications are exhibits of Fish and Shrimp's commitment to excellence. It's the assurance that every product and service we offer meets the highest industry standards. The mark of quality that defines us as,</p>
                             <strong>We are</strong>
-                            <ul style={{ marginLeft: '3rem' }}>
+                            <ul className='margin-left-content'>
                                 <li>ISO</li>
                                 <li>fssai</li>
                                 <li>HACCP</li>

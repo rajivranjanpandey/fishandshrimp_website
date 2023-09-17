@@ -59,7 +59,7 @@
 .terms ul {
     display: flex;
     gap: 35px;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .footer_body .container {

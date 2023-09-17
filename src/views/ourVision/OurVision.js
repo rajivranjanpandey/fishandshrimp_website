@@ -20,7 +20,7 @@ export default function OurVision() {
                             <br />
                             <p><b>Fish and Shrimp has been started with the vision of:</b></p>
 
-                            <ul style={{ marginLeft: '3rem' }}>
+                            <ul className='margin-left-content'>
                                 <li>Enriching your taste buds with premium quality exotic seafood.</li>
                                 <li>Providing the freshest, highest-quality seafood to customers, sourced from trusted suppliers and fishermen.</li>
                                 <li>Redefining seafood in terms of texture, taste, and flavor that can expand the gastronomic horizons.</li>
