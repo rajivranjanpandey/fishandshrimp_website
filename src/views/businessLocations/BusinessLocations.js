@@ -44,13 +44,8 @@ export default function BusinessLocations() {
                                 <li>Birbhum</li>
                             </ul>
 
-                            <h2>Odisha</h2>
+                            <h2>Odisha, Chhattisgarh, Haryana, Patna</h2>
 
-                            <h2>Chhattisgarh</h2>
-
-                            <h2>Haryana</h2>
-
-                            <h2>Patna</h2>
                             <br />
                             <br />
                             <h2>Infrastructure and Accessibility</h2>

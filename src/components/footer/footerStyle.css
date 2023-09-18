@@ -15,6 +15,7 @@
 .footer_item.link li a {
     font-weight: 500;
     color: #dedede;
+    text-decoration: underline;
 }
 
 .footer_item.link li a:hover {

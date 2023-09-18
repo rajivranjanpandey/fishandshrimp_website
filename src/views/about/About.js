@@ -67,7 +67,7 @@ export default function About() {
                                 </div>
                             </div>
                             <br />
-                            <h2>Quality Certifications</h2>
+                            <h3>Quality Certifications</h3>
                             <p>The certifications are exhibits of Fish and Shrimp's commitment to excellence. It's the assurance that every product and service we offer meets the highest industry standards. The mark of quality that defines us as,</p>
                             <strong>We are</strong>
                             <ul className='margin-left-content'>

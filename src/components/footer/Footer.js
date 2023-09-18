@@ -63,8 +63,8 @@ export default function Footer() {
                 <div className='container'>
                     <div className='footer_grid_columns'>
                         <div class="copy_right">
-                            © Copyright 2023. All Rights Reserved by <br />
-                            <NavLink to='/'>FishandsHrimp</NavLink>
+                            ©Copyright 2023. All Rights Reserved by <br />
+                            <NavLink to='/'>Fish And Shrimp</NavLink>
                         </div>
                         <div>
                             <ul style={{ listStyle: 'none', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
