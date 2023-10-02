@@ -14,18 +14,20 @@
 
 .footer_item.link li a {
     font-weight: 500;
-    color: #dedede;
-    text-decoration: underline;
+    /* color: #dedede; */
+    color: white;
+    border-bottom: 1px solid;
 }
 
 .footer_item.link li a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: var(--color-primary);
 }
 
 .footer_item.contact li a {
     font-weight: 500;
-    color: #dedede;
+    color: white;
+    /* color: #dedede; */
 }
 
 .footer_item li {
@@ -36,6 +38,7 @@
     padding: 0;
     list-style: none;
     list-style-type: none;
+    line-height: 1.4;
 }
 
 .footer_item_title {
@@ -103,12 +106,13 @@
         display: block;
     }
 
-    .copy_right p,
-    .terms a {
-        font-size: 14px !important;
-        width: 60%;
+    .copy_right {
+        font-size: 12px;
         text-align: center;
-        margin: auto;
+    }
+
+    .copy_right a {
+        color: white !important;
     }
 
     .terms ul {

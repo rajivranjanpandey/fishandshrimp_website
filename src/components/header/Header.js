@@ -39,8 +39,28 @@ function Header(props) {
                     Fish And Shrimp
                 </NavLink>
             </div>
-            <List>
-                <Accordion className='dropdowen'>
+            <List onClick={handleDrawerToggle}>
+                <NavLink to='/products?type=domestic'>Domestic Products</NavLink>
+                <Divider />
+
+                <NavLink to='/products?type=imported'>Products We Import</NavLink>
+                <Divider />
+
+                <NavLink to='/business-locations'>Business Locations</NavLink>
+                <Divider />
+
+                <NavLink to='/our-vision'>Our Vision</NavLink>
+                <Divider />
+
+                <NavLink to='/terms-conditions'>Terms & Conditions</NavLink>
+                <Divider />
+
+                <NavLink to='/privacy-policy'>Privacy Policy</NavLink>
+                <Divider />
+
+                <NavLink to='/about-us'>About Us</NavLink>
+
+                {/* <Accordion className='dropdowen'>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1a-content"
@@ -59,6 +79,7 @@ function Header(props) {
                 <NavLink to='/our-vision' onClick={handleDrawerToggle}>Our Vision</NavLink>
                 <Divider />
                 <NavLink to='/about-us' onClick={handleDrawerToggle}>About us</NavLink>
+                 */}
             </List >
         </Box >
     );

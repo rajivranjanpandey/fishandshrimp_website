@@ -1,10 +1,6 @@
 .business_location {
-  margin-top: 20px;
-  display: flex;
-}
-
-.business_text {
-  padding: 50px 0;
+  margin-top: 5px;
+  margin-bottom: 3rem;
 }
 
 .business_location .business_text h1 {
@@ -16,8 +12,12 @@
 
 .business_location .business_text p {
   font-size: 20px;
-  line-height: 33px;
+  /* line-height: 33px; */
   color: var(--light-gray);
+}
+
+.text_content .title {
+  margin: 41px 0px 15px 0px;
 }
 
 @media (max-width: 899px) {

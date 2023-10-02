@@ -70,7 +70,7 @@ export default function OurProducts() {
                                             <p>The pipeline brand for an exquisite range of prawns is Crustan. Going beyond the ordinary, the brand also introduced an array of ready-to-eat products to elevate your culinary experience.</p>
                                             <br />
                                             <h3 className='break-word'>Check out the range of Ristro Gem processed prawns offered by its parent brand Fish and Shrimp:</h3>
-                                            <ul style={{ listStyle: 'none', marginTop: '0.5rem' }}>
+                                            <ul className='break-word' style={{ listStyle: 'none', marginTop: '0.5rem' }}>
                                                 <li>Ristro Gem <b>PDTO</b> - Peeled and Deveined Tails On</li>
                                                 <li>Ristro Gem <b>PND</b> - Peeled and Deveined</li>
                                                 <li>Ristro Gem <b>PUD</b> - Peeled and Un-deveined</li>

@@ -1,10 +1,10 @@
 .our_vision_section {
-    margin-top: 20px;
-    display: flex;
+    margin-top: 5px;
+    margin-bottom: 3rem;
 }
 
 .our_vision_text {
-    padding: 50px 0;
+    margin-top: 41px;
 }
 
 .our_vision_section .our_vision_text h1 {

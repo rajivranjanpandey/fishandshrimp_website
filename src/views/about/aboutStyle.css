@@ -1,13 +1,35 @@
 .about_section {
-  margin-top: 20px;
-  display: flex;
+  margin-top: 5px;
+  margin-bottom: 3rem;
 }
 
-.about_text {
-  padding: 50px 0;
+
+.about_section .content .title {
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
+
 }
 
-.about_section .about_text h1 {
+.about_section .content .title:before {
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 1px;
+  bottom: 0;
+  left: 32%;
+  border-bottom: 1px solid black;
+}
+
+.material_extended {
+  margin-top: 1.8rem;
+}
+
+.material_extended .extended_child:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+
+/* .about_section .about_text h1 {
   font-size: 50px;
   line-height: 100%;
   margin-bottom: 15px;
@@ -18,7 +40,7 @@
   font-size: 20px;
   line-height: 33px;
   color: var(--light-gray);
-}
+} */
 
 
 @media (max-width: 899px) {

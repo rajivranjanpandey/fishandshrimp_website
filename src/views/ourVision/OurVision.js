@@ -8,13 +8,21 @@ import VisionPic from "../../assets/cover_image/vision.jpg"
 export default function OurVision() {
     return (
         <div class="our_vision_section">
+            {
+                window.isMobileView &&
+                <div className=''>
+                    <img src={VisionPic} alt='Our Vision' />
+                </div>
+            }
             <Grid container spacing={2} maxWidth="lg" margin="auto" alignItems="center">
                 <Grid item xs={12} sm={12} md={12}>
-                    <div className=''>
-                        <img src={VisionPic} alt='Our Vision' />
-                    </div>
+                    {
+                        !window.isMobileView &&
+                        <div className=''>
+                            <img src={VisionPic} alt='Our Vision' />
+                        </div>
+                    }
                     <div className='our_vision_text'>
-                        <h1>Our Vision</h1>
                         <p className='text_content'>
                             <p><b>We aim to elevate your dining experience with a premium seafood range.</b></p>
                             <br />

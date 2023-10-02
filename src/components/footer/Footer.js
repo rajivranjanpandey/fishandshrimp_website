@@ -1,8 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import fssaiImg from '../../assets/trade_logo/fssai.png';
-import haccpImg from '../../assets/trade_logo/images.jpeg';
-import isoImg from '../../assets/trade_logo/iso.jpeg';
+
 
 import './footerStyle.css';
 
@@ -14,31 +12,28 @@ export default function Footer() {
                 <div className='container'>
                     <div className='footer_grid'>
                         <div className='footer_about'>
-                            <h2>FishandShrimp</h2>
-                            <p className='break-word'>
-                                A vision and mission to cater to premium highest quality standards of seafood from sourcing to delivery
-                            </p>
+                            <h4 className='footer_item_title'>FishandShrimp</h4>
+                            <div className='break-word'>
+                                A vision and mission to cater to premium highest quality standards of seafood from sourcing to delivery.
+                            </div>
                         </div>
                         <div className=''>
                             <div className='footer_info_body'>
                                 <div className='footer_item link'>
                                     <h4 class="footer_item_title">Explore</h4>
                                     <ul>
-                                        <li><NavLink to='/products?type=imported'>Our Products</NavLink></li>
+                                        <li><NavLink to='/products?type=domestic'>Domestic Products</NavLink></li>
+                                        <li><NavLink to='/products?type=imported'>Imported Products</NavLink></li>
                                         <li><NavLink to='/business-locations'>Business Locations</NavLink></li>
-                                        <li><NavLink to='/business-locations'>Our Vision</NavLink></li>
+                                        <li><NavLink to='/our-vision'>Our Vision</NavLink></li>
+                                        <li><NavLink to='/terms-conditions'>Terms & Conditions</NavLink></li>
+                                        <li><NavLink to='/privacy-policy'>Privacy Policy</NavLink></li>
                                         <li><NavLink to='/about-us'>About us</NavLink></li>
                                     </ul>
                                 </div>
-                                <div className='footer_item contact'>
+                                <div className='footer_item contact' style={{ 'marginTop': '41px' }}>
                                     <h4 class="footer_item_title">Contact Info</h4>
                                     <ul>
-                                        <li>
-                                            <div class="content">
-                                                <strong>Address: </strong>
-                                                Lorem Ipsum is simply dummy text of the printing typesetting industry.
-                                            </div>
-                                        </li>
                                         <li>
                                             <div class="content">
                                                 <strong>Email:</strong>
@@ -54,6 +49,15 @@ export default function Footer() {
 
                                     </ul>
                                 </div>
+                                <div className='footer_item contact' style={{ 'marginTop': '41px' }}>
+                                    <h4 class="footer_item_title">Address</h4>
+                                    <div>
+                                        <span className='d-block'>Fish and shrimp</span>
+                                        <span className='d-block'>48, J.C. Khan Road, Prantick, Mankundu</span>
+                                        <span className='d-block'>Hooghly, West Bengal</span>
+                                        <span className='d-block'>Pin Code: 712139, INDIA</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -63,10 +67,9 @@ export default function Footer() {
                 <div className='container'>
                     <div className='footer_grid_columns'>
                         <div class="copy_right">
-                            ©Copyright 2023. All Rights Reserved by <br />
-                            <NavLink to='/'>Fish And Shrimp</NavLink>
+                            ©Copyright 2023. All Rights Reserved by<NavLink to='/'> FishandShrimp</NavLink>
                         </div>
-                        <div>
+                        {/* <div>
                             <ul style={{ listStyle: 'none', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                                 <li>
                                     <img src={fssaiImg} alt='image' width='30' height='30' />
@@ -88,7 +91,7 @@ export default function Footer() {
                                     <a href="#">Privacy Policy</a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
