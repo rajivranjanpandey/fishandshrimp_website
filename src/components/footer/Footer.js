@@ -31,29 +31,29 @@ export default function Footer() {
                                         <li><NavLink to='/about-us'>About us</NavLink></li>
                                     </ul>
                                 </div>
-                                <div className='footer_item contact' style={{ 'marginTop': '41px' }}>
+                                <div className='footer_item contact'>
                                     <h4 class="footer_item_title">Contact Info</h4>
                                     <ul>
                                         <li>
                                             <div class="content">
                                                 <strong>Email:</strong>
-                                                <a href="mailto:maiharmatafpo@gmail.com"> maiharmatafpo@gmail.com</a>
+                                                <a href="mailto:maiharmatafpo@gmail.com" className='break-word'> fishandshrimpdetails@gmail.com</a>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="content">
                                                 <strong>Phone:</strong>
-                                                <a href="tel:7052602377"> +91 7052602377</a>
+                                                <a href="tel:7052602377" className='break-word'> 033 3592-9518</a>
                                             </div>
                                         </li>
 
                                     </ul>
                                 </div>
-                                <div className='footer_item contact' style={{ 'marginTop': '41px' }}>
+                                <div className='footer_item contact'>
                                     <h4 class="footer_item_title">Address</h4>
                                     <div>
-                                        <span className='d-block'>Fish and shrimp</span>
-                                        <span className='d-block'>48, J.C. Khan Road, Prantick, Mankundu</span>
+                                        <span className='d-block'>Fish and Shrimp</span>
+                                        <span className='d-block break-word'>48, J.C. Khan Road, Manasatala, P.O -Mankundu</span>
                                         <span className='d-block'>Hooghly, West Bengal</span>
                                         <span className='d-block'>Pin Code: 712139, INDIA</span>
                                     </div>

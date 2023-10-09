@@ -8,16 +8,26 @@
   display: inline-block;
   padding-bottom: 5px;
   position: relative;
-
 }
 
-.about_section .content .title:before {
+.about_section .content .title.mobile:before {
   content: "";
   position: absolute;
   width: 35%;
-  height: 1px;
+  height: 3px;
   bottom: 0;
   left: 32%;
+  border-bottom: 1px solid black;
+  /* font-size: 20px !important; */
+}
+
+.about_section .content .title.desktop:before {
+  content: "";
+  position: absolute;
+  width: 10% !important;
+  height: 3px;
+  bottom: 0;
+  left: 45%;
   border-bottom: 1px solid black;
 }
 
@@ -53,4 +63,15 @@
     line-height: 30px;
   }
 
+  .about_section .content .title {
+    font-size: 20px !important;
+  }
+
+  .material_extended .extended_child {
+    font-size: 14px !important;
+  }
+
+  .material_extended .extended_child h3 {
+    font-size: 16.5px !important;
+  }
 }

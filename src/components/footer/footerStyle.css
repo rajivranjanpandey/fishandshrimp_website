@@ -47,7 +47,8 @@
 
 .footer_info_body {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
 
 .footer_bottom {
@@ -123,11 +124,15 @@
         justify-content: center;
         gap: 31px;
     }
+
+    .contact {
+        margin-top: 41px;
+        word-break: break-word;
+    }
 }
 
 @media (min-width: 1200px) {
     .footer_body .container {
-        width: 1200px;
         margin: auto;
         padding: 0 15px;
     }
