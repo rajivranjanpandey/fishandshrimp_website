@@ -58,8 +58,8 @@ export default function About() {
                                 </div>
                             </div>
                             <div className='content'>
-                                <h3 className={`margin-top-content title ${window.isMobileView ? 'mobile' : 'desktop'}`}>Meet Our Team</h3>
-                                <div className='material_extended' style={{ marginTop: '0.2 rem' }}>
+                                <h3 className={`title ${window.isMobileView ? 'mobile' : 'desktop'}`}>Meet Our Team</h3>
+                                <div style={{ marginTop: '0.1rem' }}>
                                     <div className='extended_child'>
                                         <h3>Sampad Das (Accounts Manager)</h3>
                                         <p>Specialized in Financial Accounting.</p>

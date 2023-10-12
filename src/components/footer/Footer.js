@@ -12,7 +12,7 @@ export default function Footer() {
                 <div className='container'>
                     <div className='footer_grid'>
                         <div className='footer_about'>
-                            <h4 className='footer_item_title'>FishandShrimp</h4>
+                            <h4 className='footer_item_title'>Fish And Shrimp</h4>
                             <div className='break-word'>
                                 A vision and mission to cater to premium highest quality standards of seafood from sourcing to delivery.
                             </div>
@@ -53,7 +53,8 @@ export default function Footer() {
                                     <h4 class="footer_item_title">Address</h4>
                                     <div>
                                         <span className='d-block'>Fish and Shrimp</span>
-                                        <span className='d-block break-word'>48, J.C. Khan Road, Manasatala, P.O -Mankundu</span>
+                                        <span className='d-block break-word'>48, J.C. Khan Road, Manasatala</span>
+                                        <span className='d-block'>P.O -Mankundu</span>
                                         <span className='d-block'>Hooghly, West Bengal</span>
                                         <span className='d-block'>Pin Code: 712139, INDIA</span>
                                     </div>
@@ -67,7 +68,7 @@ export default function Footer() {
                 <div className='container'>
                     <div className='footer_grid_columns'>
                         <div class="copy_right">
-                            ©Copyright 2023. All Rights Reserved by<NavLink to='/'> FishandShrimp</NavLink>
+                            ©Copyright 2023. All Rights Reserved by<NavLink to='/'> Fish And Shrimp</NavLink>
                         </div>
                         {/* <div>
                             <ul style={{ listStyle: 'none', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
