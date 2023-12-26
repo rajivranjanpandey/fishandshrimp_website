@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
             <Grid container spacing={2} maxWidth="lg" margin="auto" alignItems="center">
                 <Grid item xs={12} sm={12} md={12}>
                     <div className='head_content'>
-                        <h1>Privacy Policy</h1>
+                        <h1 className="title">Privacy Policy</h1>
                         <p className='break-word'>This Privacy Policy describes how Fish and Shrimp ("we," "us," or "our") collects, uses, and discloses information that we obtain through our website <a href='/'>https://fishandshrimp.in</a> (the "Site"). Your use of the Site indicates your acceptance of this Privacy Policy.</p>
                     </div>
                     <div className='head_content'>
