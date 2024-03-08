@@ -46,7 +46,11 @@ export default function PrivacyPolicy() {
                     </div>
                     <div className='head_content'>
                         <h1>Data Security</h1>
-                        <p className='break-word'>We take reasonable measures to protect the security of your information. However, please note that no method of transmission over the Internet or method of electronic storage is completely secure.</p>
+                        <p className='break-word'>We take reasonable measures to protect the security of your information.
+                            However, please note that no method of transmission over the Internet or method of electronic storage is completely secure.
+                            Please write to us at <a style={{ color: 'black', textDecoration: 'underline' }} href="mailto:fishandshrimpdetails@gmail.com">fishandshrimpdetails@gmail.com</a> regarding your concern or in case you want to delete your account permanently.
+                            We will delete your account within 48 working hours and will revert back along with a confirmation email.
+                        </p>
                     </div>
                     <div className='head_content'>
                         <h1>Third-Party Links</h1>
