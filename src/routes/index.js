@@ -21,7 +21,9 @@ const routes = createBrowserRouter([
             { path: '/our-vision', element: <OurVision /> },
             { path: '/about-us', element: <About /> },
             { path: '/privacy-policy', element: <PrivacyPolicy /> },
+            { path: '/privacy-policy_app', element: <PrivacyPolicy /> },
             { path: '/terms-conditions', element: <TermsConditions /> },
+            { path: '/terms-conditions_app', element: <TermsConditions /> },
 
         ]
     },

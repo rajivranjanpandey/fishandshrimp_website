@@ -6,16 +6,22 @@ import Box from '@mui/material/Box';
 
 export default function MaiinWrapper() {
     const location = useLocation();
+    const appServedRoute = location.pathname.endsWith('_app');
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, [location])
+    }, [location]);
     return (
         <>
-
-            <Header />
+            {
+                !appServedRoute &&
+                <Header />
+            }
             <Box component="main" sx={{ p: 3 }}>
                 <Outlet />
-                <Footer />
+                {
+                    !appServedRoute &&
+                    <Footer />
+                }
             </Box>
         </>
     )
